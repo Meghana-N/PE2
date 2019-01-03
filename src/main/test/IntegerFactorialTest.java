@@ -1,9 +1,14 @@
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
+import static org.junit.Assert.assertEquals;
 
 import static org.junit.Assert.*;
 
+@RunWith(JUnit4.class)
 public class IntegerFactorialTest {
     IntegerFactorial f1;
     @Before
@@ -20,7 +25,7 @@ public class IntegerFactorialTest {
     public void getFactorial1Success() {
         String actualStr = f1.getFactorial(2);
         String expectedStr = "The factorial of 1 is 1\n" + "The factorial of 2 is 2";
-        assertEquals(actualStr,expectedStr);
+        assertEquals(expectedStr,actualStr);
     }
 
     @Test

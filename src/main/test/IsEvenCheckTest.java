@@ -18,15 +18,15 @@ public class IsEvenCheckTest {
 
     @Test
     public void checkIsEvenSuccess() {
-        Boolean actualStr = p1.checkIsEven(56);
-        Boolean expectedStr = "True";
+        Boolean actualStr = e1.checkIsEven(56);
+        Boolean expectedStr =true;
         assertEquals(actualStr,expectedStr);
     }
 
     @Test
     public void checkIsEvenFailure() {
-        Boolean actualStr = p1.checkIsEven(53);
-        Boolean expectedStr = "False";
+        Boolean actualStr = e1.checkIsEven(53);
+        Boolean expectedStr = false;
         assertEquals(actualStr,expectedStr);
     }
 }

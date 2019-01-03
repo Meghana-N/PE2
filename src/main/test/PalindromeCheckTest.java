@@ -19,6 +19,7 @@ public class PalindromeCheckTest {
     @Test
     public void checkPalindromeSuccess() {
         String actualStr = p1.checkPalindrome("abcba");
+        System.out.println(actualStr);
         String expectedStr = "Palindrome";
         assertEquals(actualStr,expectedStr);
     }
