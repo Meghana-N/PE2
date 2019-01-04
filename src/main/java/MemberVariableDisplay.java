@@ -1,19 +1,19 @@
 public class MemberVariableDisplay {
-    public String memberName(String Name)
-    {
-        if( Name == null )
-        {
-            return null;
-        }
-        return Name;
-    }
+
+
+  public String memberName(String Name)
+   {
+            Member member=new Member();
+            member.setName(Name);
+            return member.getName();
+
+   }
     public int memberAge(int Age)
     {
-        if( Age == 0 )
-        {
-            return 0;
-        }
-        return Age;
+        Member member=new Member();
+        member.setAge(Age);
+        return member.getAge();
+
     }
     public String memberSalary(String Salary)
     {
@@ -21,16 +21,10 @@ public class MemberVariableDisplay {
         {
             return null;
         }
+        Member member=new Member();
+        Double salary=Double.valueOf(Salary);
+        member.setSalary(salary);
+        Salary=Double.toString(member.getSalary());
         return Salary;
-    }
-    public void variableInitialise()
-    {
-        Member obj=new Member();
-        obj.Name="Harry Potter";
-        System.out.println(memberName(obj.Name));
-        obj.Age=30;
-        System.out.println(memberAge(obj.Age));
-        obj.Salary=2500.0;
-        System.out.println(memberSalary(Double.toString(obj.Salary)));
     }
 }
