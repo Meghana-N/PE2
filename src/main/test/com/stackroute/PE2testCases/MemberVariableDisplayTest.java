@@ -1,5 +1,8 @@
+package com.stackroute.PE2testCases;
+
 import static org.junit.Assert.*;
 
+import com.stackroute.PE2.MemberVariableDisplay;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

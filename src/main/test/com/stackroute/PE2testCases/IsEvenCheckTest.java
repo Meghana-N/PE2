@@ -1,3 +1,6 @@
+package com.stackroute.PE2testCases;
+
+import com.stackroute.PE2.IsEvenCheck;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
